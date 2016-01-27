@@ -1,0 +1,76 @@
+
+
+/*vertical popout navigation */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+  font-family:Open Sans, Ariel, sans-serif;
+	overflow-x:hidden;
+}
+
+nav{
+	position:fixed;
+	z-index: 1000;
+	top:0px;
+	bottom:0px;
+	width:200px;
+  background-color:grey;
+  transform: translate3d (-200px,0,0);
+  transition: transform 0.4s ease;
+}
+
+.active-nav nav {
+  transform: translate3d (0,0,0);
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin-top: 100px;
+    }
+
+
+nav ul li a {
+  display: block;
+  color: #000;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align:center;
+}
+
+.nav-toggle-btn{
+	background-color: blue;
+	display:block;
+	position: absolute;
+	left:200px;
+	width:40px;
+  height:40px;
+}
+
+
+.content{
+  padding-top: 300px; 
+  height:2000px;
+  transition: transform 0.4s ease;
+
+}
+
+.active-nav .content {
+
+  transform: translate3d (200px, 0,0);
+
+}
+
+
+
+
+
+
+
+
+
+
